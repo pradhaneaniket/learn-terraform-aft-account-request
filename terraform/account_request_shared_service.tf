@@ -3,7 +3,7 @@ module "sharedService" {
     source = "./modules/aft-account-request"
     control_tower_parameters = {
         AccountEmail = "ahtesham.sheikh+shared@blazecla.com"
-        AccountName = "Share Service"
+        AccountName = "Shared Service"
         ManagedOrganizationalUnit = "Infrastructure"
         SSOUserEmail = "aniket.pradhane@blazeclan.com"
         SSOUserFirstName = "Aniket"
@@ -21,5 +21,5 @@ module "sharedService" {
         change_requested_by = "Aniket Pradhane"
     
     }
-    account_customizations_name = "shared-service-account-customization"
+    account_customizations_name = "shared-service"
 }
