@@ -4,7 +4,7 @@ module "masteraccount" {
     control_tower_parameters = {
         AccountEmail = "birajdar007shivraj@gmail.com"
         AccountName = "gmail.com"
-        ManagedOrganizationalUnit = "root"
+        ManagedOrganizationalUnit = "Root"
         SSOUserEmail = "aniket.pradhane@blazeclan.com"
         SSOUserFirstName = "Aniket"
         SSOUserLastName = "Pradhane"
