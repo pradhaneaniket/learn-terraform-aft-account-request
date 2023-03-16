@@ -1,6 +1,4 @@
-module "aft_pipeline" {
-  source = "git::https://github.com/aws-ia/terraform-aws-control_tower_account_factory.git?ref=1.3.1"
-}
+
 module "masteraccount" {
 
     source = "./modules/aft-account-request"
