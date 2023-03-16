@@ -21,5 +21,5 @@ module "sharedService" {
         change_requested_by = "Aniket Pradhane"
     
     }
-    account_customizations_name = "shared-service"
+    account_customizations_name = "sharedservice"
 }
