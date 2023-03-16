@@ -1,5 +1,5 @@
 
-module "masteraccount" {
+module "masterAccount" {
 
     source = "./modules/aft-account-request"
     control_tower_parameters = {
