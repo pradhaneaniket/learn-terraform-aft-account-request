@@ -1,0 +1,26 @@
+name: Execute AWS Codepipeline for Account vending
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: arn:aws:iam::919153089888:role/CT-AFT-Code-pipeline
+        aws-region: eu-central-1
+
+    - run: aws codepipeline start-pipeline-execution --name ct-aft-account-request
